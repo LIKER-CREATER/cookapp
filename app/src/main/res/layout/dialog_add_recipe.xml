@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 食谱图片 -->
+        <ImageView
+            android:id="@+id/recipeImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_placeholder"
+            android:contentDescription="食谱图片" />
+
+        <!-- 食谱名称 -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="食谱名称"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <!-- 菜系选择 -->
+        <Spinner
+            android:id="@+id/cuisineSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp" />
+
+        <!-- 烹饪方式选择 -->
+        <Spinner
+            android:id="@+id/cookingMethodSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp" />
+
+        <!-- 难度等级选择 -->
+        <Spinner
+            android:id="@+id/difficultySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp" />
+
+        <!-- 烹饪时间 -->
+        <EditText
+            android:id="@+id/cookingTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="烹饪时间（分钟）"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <!-- 热量 -->
+        <EditText
+            android:id="@+id/caloriesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="热量（千卡）"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <!-- 食材 -->
+        <EditText
+            android:id="@+id/ingredientsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="食材（用逗号分隔）"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <!-- 步骤 -->
+        <EditText
+            android:id="@+id/stepsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="烹饪步骤（每行一个步骤）"
+            android:inputType="textMultiLine"
+            android:minLines="4" />
+
+    </LinearLayout>
+</ScrollView> 

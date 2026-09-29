@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recommendationFragment">
+
+    <fragment
+        android:id="@+id/recommendationFragment"
+        android:name="com.example.cookapp.RecommendationFragment"
+        android:label="为你推荐">
+        <action
+            android:id="@+id/action_recommendationFragment_to_recipeDetailActivity"
+            app:destination="@id/recipeDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.example.cookapp.RecipesFragment"
+        android:label="食谱列表">
+        <action
+            android:id="@+id/action_recipesFragment_to_recipeDetailActivity"
+            app:destination="@id/recipeDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.cookapp.FavoritesFragment"
+        android:label="收藏">
+        <action
+            android:id="@+id/action_favoritesFragment_to_recipeDetailActivity"
+            app:destination="@id/recipeDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mealPlanFragment"
+        android:name="com.example.cookapp.ui.mealplan.MealPlanFragment"
+        android:label="菜单计划">
+        <action
+            android:id="@+id/action_mealPlanFragment_to_recipeDetailActivity"
+            app:destination="@id/recipeDetailActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.cookapp.ui.profile.ProfileFragment"
+        android:label="个人中心">
+        <action
+            android:id="@+id/action_profileFragment_to_shoppingListFragment"
+            app:destination="@id/shoppingListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shoppingListFragment"
+        android:name="com.example.cookapp.ui.shopping.ShoppingListFragment"
+        android:label="购物清单" />
+
+    <activity
+        android:id="@+id/recipeDetailActivity"
+        android:name="com.example.cookapp.RecipeDetailActivity"
+        android:label="食谱详情" />
+
+</navigation>

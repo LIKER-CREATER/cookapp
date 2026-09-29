@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调：温暖的橙色 -->
+    <color name="primary">#FF6B35</color>
+    <color name="primary_dark">#E85D2C</color>
+    <color name="primary_light">#FFE8E0</color>
+
+    <!-- 兼容旧版本的颜色名称 -->
+    <color name="colorPrimary">@color/primary</color>
+    <color name="colorPrimaryDark">@color/primary_dark</color>
+    <color name="colorAccent">@color/accent</color>
+    <color name="chip_background">@color/primary_light</color>
+
+    <!-- 强调色：清新的绿色 -->
+    <color name="accent">#4CAF50</color>
+    <color name="accent_dark">#388E3C</color>
+    <color name="accent_light">#C8E6C9</color>
+
+    <!-- 背景色：温暖的米色 -->
+    <color name="background">#FFF9F5</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- 功能色 -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+
+    <!-- 其他常用颜色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 卡片和分割线颜色 -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#EEEEEE</color>
+
+    <!-- 状态栏颜色 -->
+    <color name="status_bar">#E85D2C</color>
+
+    <!-- 个人中心专用色 -->
+    <color name="profile_header_bg">#FF6B35</color>
+    <color name="profile_header_bg_dark">#E85D2C</color>
+    <color name="profile_avatar_ring">#CCFFFFFF</color>
+    <color name="profile_welcome_text">#99FFFFFF</color>
+    <color name="profile_username_text">#FFFFFF</color>
+    <color name="profile_action_card_bg">#FFFFFF</color>
+    <color name="profile_action_icon_bg">#FFF3EE</color>
+    <color name="profile_action_icon_tint">#FF6B35</color>
+    <color name="profile_action_text_primary">#212121</color>
+    <color name="profile_action_text_secondary">#757575</color>
+    <color name="profile_divider">#F0F0F0</color>
+    <color name="profile_ripple">#1AFF6B35</color>
+</resources>

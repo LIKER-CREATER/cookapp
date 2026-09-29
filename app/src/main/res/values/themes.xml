@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CookApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 主色调 -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        
+        <!-- 强调色 -->
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        
+        <!-- 背景色 -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        
+        <!-- 文字颜色 -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        
+        <!-- 状态栏颜色 -->
+        <item name="android:statusBarColor">@color/status_bar</item>
+        
+        <!-- 其他属性 -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        
+        <!-- Material Design 组件样式 -->
+        <item name="materialCardViewStyle">@style/Widget.CookApp.CardView</item>
+        <item name="chipStyle">@style/Widget.CookApp.Chip</item>
+        <item name="buttonStyle">@style/Widget.CookApp.Button</item>
+        <item name="textInputStyle">@style/Widget.CookApp.TextInputLayout</item>
+    </style>
+
+    <!-- 卡片样式 -->
+    <style name="Widget.CookApp.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- 芯片样式 -->
+    <style name="Widget.CookApp.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/primary_light</item>
+        <item name="chipStrokeColor">@color/primary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/primary_dark</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="Widget.CookApp.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- 行动按钮样式（用于购物清单、批量导入等次要行动按钮） -->
+    <style name="Widget.CookApp.ActionButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/accent</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">4dp</item>
+    </style>
+
+    <!-- 文本输入框样式 -->
+    <style name="Widget.CookApp.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+    </style>
+</resources>
